@@ -1,6 +1,6 @@
 # Launch Countdown — KDE Plasma 6 Widget
 
-A sleek desktop countdown widget for KDE Plasma 6. Configurable target date, accent color, and footer label.
+A sleek desktop countdown widget for KDE Plasma 6. Configurable target date, accent color. Default is GTA VI launch date on November 19, 2026.
 
 ![preview](./preview.png)
 
@@ -8,22 +8,13 @@ A sleek desktop countdown widget for KDE Plasma 6. Configurable target date, acc
 
 - **KDE Plasma 6** (Plasma 5 is not supported — uses the new `PlasmoidItem` API)
 - **Qt 6**
-- *(Optional)* Font **"Big Shoulders Stencil Display"** for the exact look. The widget falls back gracefully to a condensed sans-serif if it isn't installed.
+- *(Optional)* Font **"Big Shoulders"**. The widget falls back gracefully to a condensed sans-serif if it isn't installed.
 
 ### Install the optional font
 
 Grab it from Google Fonts and drop the TTFs in your local font folder:
 
-```bash
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts
-# Download the family (use your browser, or:)
-wget "https://fonts.google.com/download?family=Big%20Shoulders%20Stencil%20Display" -O big-shoulders.zip
-unzip -j big-shoulders.zip "static/*Light*.ttf" "static/*Regular*.ttf"
-fc-cache -f ~/.local/share/fonts
-```
-
-(Arch users: `sudo yay -S ttf-google-fonts-git` will grab the AUR package.)
+[Download link Big Shoulders](https://fonts.google.com/specimen/Big+Shoulders?family=Big+Shoulders+Stencil+Display&preview.script=Latn)
 
 ## Install the widget
 
@@ -34,18 +25,9 @@ fc-cache -f ~/.local/share/fonts
 kpackagetool6 --type Plasma/Applet --install local.launchcountdown
 ```
 
-Then **right-click your desktop -> "Add Widgets…" -> search "Launch Countdown" -> drag onto desktop.**
+Then **right-click your desktop -> "Edit Mode..." -> "Add or manage objects..." -> search "Launch Countdown" -> click or drag onto desktop.**
 
-### Option B — Install from .plasmoid file
-
-If you downloaded `LaunchCountdown.plasmoid`:
-
-1. Right-click desktop -> **Add Widgets…**
-2. Click **Get New Widgets… -> Install Widget from Local File…**
-3. Pick `LaunchCountdown.plasmoid`
-4. Find "Launch Countdown" in the widget list, drag it onto your desktop
-
-### Option C — Manual install
+### Option B — Manual install
 
 Copy the folder into your local plasmoid path:
 
