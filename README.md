@@ -23,7 +23,7 @@ unzip -j big-shoulders.zip "static/*Light*.ttf" "static/*Regular*.ttf"
 fc-cache -f ~/.local/share/fonts
 ```
 
-(Arch users: `sudo pacman -S ttf-google-fonts-git` also works.)
+(Arch users: `sudo yay -S ttf-google-fonts-git` will grab the AUR package.)
 
 ## Install the widget
 
