@@ -34,14 +34,14 @@ fc-cache -f ~/.local/share/fonts
 kpackagetool6 --type Plasma/Applet --install local.launchcountdown
 ```
 
-Then **right-click your desktop → "Add Widgets…" → search "Launch Countdown" → drag onto desktop.**
+Then **right-click your desktop -> "Add Widgets…" -> search "Launch Countdown" -> drag onto desktop.**
 
 ### Option B — Install from .plasmoid file
 
 If you downloaded `LaunchCountdown.plasmoid`:
 
-1. Right-click desktop → **Add Widgets…**
-2. Click **Get New Widgets… → Install Widget from Local File…**
+1. Right-click desktop -> **Add Widgets…**
+2. Click **Get New Widgets… -> Install Widget from Local File…**
 3. Pick `LaunchCountdown.plasmoid`
 4. Find "Launch Countdown" in the widget list, drag it onto your desktop
 
@@ -57,15 +57,13 @@ kquitapp6 plasmashell && kstart plasmashell
 
 ## Configure
 
-Right-click the widget → **Configure Launch Countdown…**
+Right-click the widget -> **Configure Launch Countdown…**
 
 | Setting | Default | Notes |
 |---|---|---|
 | Target date | `2026-11-19T00:00:00` | ISO format, local time |
-| Footer label | `LAUNCH` | Shown after the date in the footer bar |
 | Accent color | `#19d2ff` | Hex; applied to the numerals |
-| Show footer | on | Toggle the bottom bar |
-| Show seconds | on | Hide for a calmer ticker |
+| Show seconds | on | Hide to only show hours and minutes |
 
 ## Uninstall
 

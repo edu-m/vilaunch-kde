@@ -8,7 +8,7 @@
         ],
         "Category": "Date and Time",
         "Description": "A sleek countdown timer for GTA VI launch for KDE Plasma 6",
-        "Icon": "clock",
+        "Icon": "appointment-soon",
         "Id": "local.launchcountdown",
         "License": "MIT",
         "Name": "Launch Countdown",
