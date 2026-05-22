@@ -7,9 +7,7 @@ Kirigami.FormLayout {
     id: page
 
     property alias cfg_targetDate: targetField.text
-    property alias cfg_footerLabel: footerField.text
     property alias cfg_accentColor: accentField.text
-    property alias cfg_showFooter: footerToggle.checked
     property alias cfg_showSeconds: secondsToggle.checked
 
     QQC2.TextField {
@@ -22,13 +20,6 @@ Kirigami.FormLayout {
         text: i18n("ISO format: YYYY-MM-DDTHH:MM:SS (24h, local time)")
         opacity: 0.7
         font.pointSize: Kirigami.Theme.smallFont.pointSize
-    }
-
-    QQC2.TextField {
-        id: footerField
-        Kirigami.FormData.label: i18n("Footer label:")
-        placeholderText: "LAUNCH"
-        Layout.preferredWidth: Kirigami.Units.gridUnit * 16
     }
 
     RowLayout {
