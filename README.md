@@ -20,9 +20,10 @@ Grab it from Google Fonts and drop the TTFs in your local font folder:
 
 ### Option A — Drop-in install (recommended)
 
+After you clone this repo, navigate into the root folder of the project and run:
 ```bash
-# From the folder containing this README:
-kpackagetool6 --type Plasma/Applet --install local.launchcountdown
+sudo chmod +x install.sh
+./install.sh
 ```
 
 Then **right-click your desktop -> "Edit Mode..." -> "Add or manage objects..." -> search "Launch Countdown" -> click or drag onto desktop.**
@@ -69,8 +70,8 @@ kquitapp6 plasmashell && kstart plasmashell
 
 **Crashes / blank widget:** check `journalctl --user -f` while plasmashell starts. Most often it's a Plasma 5 vs 6 mismatch — this widget is **Plasma 6 only**.
 
-**Font looks plain:** Big Shoulders Stencil Display isn't installed. See the font section above, or edit `contents/ui/main.qml` and change `stencilFamily` to any condensed display font you have.
+**Font looks plain:** Big Shoulders isn't installed. See the font section above.
 
 ## License
 
-MIT — do what you like.
+MIT - mess with it.
