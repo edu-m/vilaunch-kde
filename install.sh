@@ -11,7 +11,7 @@ if ! command -v kpackagetool6 >/dev/null 2>&1; then
     exit 1
 fi
 
-if kpackagetool6 --type Plasma/Applet --list 2>/dev/null | grep -q "local.launchcountdown"; then
+if kpackagetool6 --type Plasma/Applet --list 2>/dev/null | grep -q "local.vilaunch-kde"; then
     echo "Already installed — upgrading…"
     kpackagetool6 --type Plasma/Applet --upgrade "$PKG_DIR"
 else

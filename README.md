@@ -31,7 +31,7 @@ fc-cache -f ~/.local/share/fonts
 
 ```bash
 # From the folder containing this README:
-kpackagetool6 --type Plasma/Applet --install local.launchcountdown
+kpackagetool6 --type Plasma/Applet --install local.vilaunch-kde
 ```
 
 Then **right-click your desktop -> "Add Widgets…" -> search "Launch Countdown" -> drag onto desktop.**
@@ -51,7 +51,7 @@ Copy the folder into your local plasmoid path:
 
 ```bash
 mkdir -p ~/.local/share/plasma/plasmoids/
-cp -r local.launchcountdown ~/.local/share/plasma/plasmoids/
+cp -r local.vilaunch-kde ~/.local/share/plasma/plasmoids/
 kquitapp6 plasmashell && kstart plasmashell
 ```
 
@@ -68,7 +68,7 @@ Right-click the widget -> **Configure Launch Countdown…**
 ## Uninstall
 
 ```bash
-kpackagetool6 --type Plasma/Applet --remove local.launchcountdown
+kpackagetool6 --type Plasma/Applet --remove local.vilaunch-kde
 ```
 
 ## Update after editing
@@ -76,7 +76,7 @@ kpackagetool6 --type Plasma/Applet --remove local.launchcountdown
 If you tweak the QML:
 
 ```bash
-kpackagetool6 --type Plasma/Applet --upgrade local.launchcountdown
+kpackagetool6 --type Plasma/Applet --upgrade local.vilaunch-kde
 # then either re-add the widget, or:
 kquitapp6 plasmashell && kstart plasmashell
 ```
