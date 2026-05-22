@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="targetDate" type="String">
+            <default>2026-11-19T00:00:00</default>
+        </entry>
+        <entry name="footerLabel" type="String">
+            <default>LAUNCH</default>
+        </entry>
+        <entry name="accentColor" type="String">
+            <default>#19d2ff</default>
+        </entry>
+        <entry name="showFooter" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showSeconds" type="Bool">
+            <default>true</default>
+        </entry>
+    </group>
+</kcfg>

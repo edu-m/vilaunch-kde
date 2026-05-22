@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Eduardo Meli"
+            }
+        ],
+        "Category": "Date and Time",
+        "Description": "A sleek countdown timer for GTA VI launch for KDE Plasma 6",
+        "Icon": "clock",
+        "Id": "local.launchcountdown",
+        "License": "MIT",
+        "Name": "Launch Countdown",
+        "Version": "1.0.0",
+        "Website": "www.github.com/edu-m"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
