@@ -11,6 +11,11 @@ import org.kde.kirigami as Kirigami
 PlasmoidItem {
     id: root
 
+    FontLoader {
+        id: bigShoulders
+        source: "/usr/local/share/fonts/b/BigShoulders_VariableFont_opsz,wght.ttf"
+    }
+
     property var targetDate: parseTarget(Plasmoid.configuration.targetDate)
     property int days:    0
     property int hours:   0
@@ -57,7 +62,7 @@ PlasmoidItem {
         onTriggered: root.tick()
     }
 
-    property string stencilFamily: "Big Shoulders Stencil Display, Big Shoulders Display, Saira Condensed, DejaVu Sans Condensed, sans-serif"
+    property string stencilFamily: bigShoulders.status === FontLoader.Ready ? bigShoulders.name : "sans-serif"
     property string monoFamily:    "JetBrains Mono, IBM Plex Mono, Hack, DejaVu Sans Mono, monospace"
 
     property color accent: Plasmoid.configuration.accentColor || "#5bc8f5"
@@ -66,6 +71,8 @@ PlasmoidItem {
         "JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE",
         "JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"
     ]
+
+    Plasmoid.backgroundHints: PlasmaCore.Types.NoBackground
 
     preferredRepresentation: fullRepresentation
 
@@ -76,7 +83,6 @@ PlasmoidItem {
         Layout.preferredWidth:  Kirigami.Units.gridUnit * 28
         Layout.preferredHeight: Kirigami.Units.gridUnit * 11
 
-        // Card base — dark purple/maroon
         Rectangle {
             anchors.fill: parent
             radius: 14
@@ -88,7 +94,6 @@ PlasmoidItem {
             border.width: 1
         }
 
-        // Left-to-right reddish-to-transparent tint for the diagonal feel
         Rectangle {
             anchors.fill: parent
             radius: 14
