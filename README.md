@@ -2,7 +2,7 @@
 
 A sleek desktop countdown widget for KDE Plasma 6. Configurable target date, accent color. Default is GTA VI launch date on November 19, 2026.
 
-
+![preview](./preview_image.png)
 
 ## Requirements
 
