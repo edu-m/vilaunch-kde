@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Helper script — install the Launch Countdown plasmoid.
+# Helper script - install the VILaunch-KDE plasmoid.
 # Usage:  ./install.sh
 
 set -e
@@ -12,12 +12,12 @@ if ! command -v kpackagetool6 >/dev/null 2>&1; then
 fi
 
 if kpackagetool6 --type Plasma/Applet --list 2>/dev/null | grep -q "local.vilaunch-kde"; then
-    echo "Already installed — upgrading…"
+    echo "Already installed - upgrading…"
     kpackagetool6 --type Plasma/Applet --upgrade "$PKG_DIR"
 else
     kpackagetool6 --type Plasma/Applet --install "$PKG_DIR"
 fi
 
 echo ""
-echo "Installed. Right-click your desktop -> Add Widgets… -> search 'Launch Countdown'."
+echo "Installed. Right-click your desktop -> Add Widgets… -> search 'VILaunch-KDE'."
 echo "  (If it doesn't appear, run:  kbuildsycoca6  then reopen Add Widgets.)"

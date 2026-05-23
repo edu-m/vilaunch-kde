@@ -11,7 +11,7 @@
         "Icon": "clock",
         "Id": "local.vilaunch-kde",
         "License": "MIT",
-        "Name": "Launch Countdown",
+        "Name": "VILaunch-KDE",
         "Version": "1.0.0",
         "Website": "www.github.com/edu-m/vilaunch-kde"
     },

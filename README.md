@@ -6,7 +6,7 @@ A sleek desktop countdown widget for KDE Plasma 6. Configurable target date, acc
 
 ## Requirements
 
-- **KDE Plasma 6** (Plasma 5 is not supported — uses the new `PlasmoidItem` API)
+- **KDE Plasma 6** (Plasma 5 is not supported - uses the new `PlasmoidItem` API)
 - **Qt 6**
 - *(Optional)* Font **"Big Shoulders"**. The widget falls back gracefully to a condensed sans-serif if it isn't installed.
 
@@ -18,7 +18,7 @@ Grab it from Google Fonts and drop the TTFs in your local font folder:
 
 ## Install the widget
 
-### Option A — Drop-in install (recommended)
+### Option A - Drop-in install (recommended)
 
 After you clone this repo, navigate into the root folder of the project and run:
 ```bash
@@ -26,9 +26,9 @@ sudo chmod +x install.sh
 ./install.sh
 ```
 
-Then **right-click your desktop -> "Edit Mode..." -> "Add or manage objects..." -> search "Launch Countdown" -> click or drag onto desktop.**
+Then **right-click your desktop -> "Edit Mode..." -> "Add or manage objects..." -> search "VILaunch-KDE" -> click or drag onto desktop.**
 
-### Option B — Manual install
+### Option B - Manual install
 
 Copy the folder into your local plasmoid path:
 
@@ -40,7 +40,7 @@ kquitapp6 plasmashell && kstart plasmashell
 
 ## Configure
 
-Right-click the widget -> **Configure Launch Countdown…**
+Right-click the widget -> **Configure VILaunch-KDE…**
 
 | Setting | Default | Notes |
 |---|---|---|
@@ -68,7 +68,7 @@ kquitapp6 plasmashell && kstart plasmashell
 
 **Widget doesn't appear in "Add Widgets":** run `kbuildsycoca6` and reopen the panel.
 
-**Crashes / blank widget:** check `journalctl --user -f` while plasmashell starts. Most often it's a Plasma 5 vs 6 mismatch — this widget is **Plasma 6 only**.
+**Crashes / blank widget:** check `journalctl --user -f` while plasmashell starts. Most often it's a Plasma 5 vs 6 mismatch - this widget is **Plasma 6 only**.
 
 **Font looks plain:** Big Shoulders isn't installed. See the font section above.
 

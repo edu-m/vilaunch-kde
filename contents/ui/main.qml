@@ -1,5 +1,5 @@
 /*
- * Launch Countdown — Plasma 6 widget
+ * VILaunch-KDE - Plasma 6 widget
  */
 
 import QtQuick
